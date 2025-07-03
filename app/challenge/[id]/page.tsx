@@ -175,7 +175,16 @@ export default function ChallengePage() {
             </div>
 
             <div className="prose max-w-none mb-6">
-              <p className="text-gray-700 text-lg leading-relaxed">{challenge.description}</p>
+              <div className="prose max-w-none mb-6">
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  {challenge.description}{' '}
+                  {challenge.link && (
+                    <a href={challenge.link} className="text-blue-600 underline ml-1" target="_blank" rel="noopener noreferrer">
+                      Solve this here
+                    </a>
+                  )}
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center justify-between text-sm text-gray-500 mb-6">

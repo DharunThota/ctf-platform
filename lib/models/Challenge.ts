@@ -4,6 +4,7 @@ export interface Challenge {
   _id?: ObjectId
   title: string
   description: string
+  link: string
   category: string
   difficulty: 'easy' | 'medium' | 'hard'
   points: number
